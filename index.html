@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            background-color: #292c33;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 320px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background-image: url("https://images.unsplash.com/photo-1549965703-40687568d457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: #fff;
+        }
+
+        .header .back {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header .back svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .header .options {
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .header .options svg {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+
+        .profile-info {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .profile-info .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-info .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info .stats {
+            text-align: center;
+        }
+
+        .profile-info .stats p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .buttons button {
+            background-color: #292c33;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #333;
+        }
+
+        .gallery {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .gallery .image {
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .gallery .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .gallery .navigation svg {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .gallery .navigation svg:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">     
+            <a href="#" class="back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.83-10.58 10.58 10.58 10.58-2.83 2.83-12.75-12.75 12.75-12.75z" />b</svg>
+                
+            </a>
+            <h2>Spider man</h2>
+            <div class="options">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10s-10-4.48-10-10s4.48-10 10-10zm0-2c-6.63 0-12 5.37-12 12s5.37 12 12 12s12-5.37 12-12s-5.37-12-12-12zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8z" /></svg>
+            </div>
+        </div>
+        <div class="profile-info">
+            <div class="profile-pic">
+                <img src="https://images.hdqwalls.com/download/spiderman-closeup-face-re-1440x2560.jpg" alt="Profile Picture">
+            </div>
+            <div class="stats">
+                <p>230 <br> Followers</p>
+                <p>140 <br> Following</p>
+                <p>15 <br> Albums</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Follow</button>
+            <button>Message</button>
+        </div>
+        <div class="gallery">
+            <div class="navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 7.41l-5.83 5.84L10.59 12l5.83 5.83L18 12l-5.83-5.83z" /></svg>
+                <p>Portraits <br> 25 Photos</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 7.41l5.83 5.84L13.41 12l-5.83 5.83L6 12l5.83-5.83z" /></svg>
+            </div>
+            <div class="image">
+                <img src="https://avatars.mds.yandex.net/i?id=8fff1290e29129d145e5560934d73f6e_l-5384958-images-thumbs&n=13" alt="Image 1">
+            </div>
+            <div class="image">
+                <img src="https://avatars.mds.yandex.net/i?id=5ac26edbe809ef431a9cd289ccf85a167485ded3-9193117-images-thumbs&n=13" alt="Image 2">
+            </div>
+            <div class="image">
+                <img src="https://avatars.mds.yandex.net/i?id=de15fea59cfaad1bb38cc42b3d043f7eeacb5876-5856310-images-thumbs&n=13" alt="Image 3">
+            </div>
+            <div class="image">
+                <img src="https://avatars.mds.yandex.net/i?id=eaf7e82bfe9b0c0d5d70883910c52f4f_l-6881974-images-thumbs&n=13" alt="Image 4">
+            </div>
+            <div class="image">
+                <img src="https://avatars.mds.yandex.net/i?id=30f425da982ef6d6182e85566b0da10b_l-4795551-images-thumbs&n=13" alt="Image 5">
+            </div>
+            <div class="image">
+                <img src="https://i.pinimg.com/736x/89/c2/4a/89c24a86eaf85af22a8d3dbf56af97ef.jpg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
